@@ -1,0 +1,174 @@
+/* Base styles */
+body {
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc, rgb(12, 164, 126));
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+body h1{
+    text-indent: 15rem;
+    text-decoration: line-through;
+    text-decoration-style: dashed;
+    text-decoration-line: overline;
+}
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #FFD9D9;
+  }
+  
+  .container {
+    text-align: center;
+    background: #002F62;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+    margin: 3rem;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2575fc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #1b5ad6;
+  }
+  
+  .volume-control {
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  input[type="range"] {
+    /* -webkit-appearance: none; */
+    width: 150px;
+    height: 5px;
+    background: #fff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #05317d;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #154598;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 600px;
+      padding: 50px;
+    }
+  
+    textarea {
+      font-size: 18px;
+    }
+  
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+    }
+  
+    input[type="range"] {
+      width: 200px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 500px;
+      padding: 40px;
+    }
+  
+    textarea {
+      font-size: 17px;
+    }
+  
+    button {
+      padding: 11px 22px;
+      font-size: 17px;
+    }
+  
+    input[type="range"] {
+      width: 180px;
+    }
+  }
+  
+  /* Small devices (mobile phones, less than 768px) */
+  @media (max-width: 767px) {
+    .container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    textarea {
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 10px; /* Space between buttons */
+    }
+  
+    .volume-control {
+      flex-direction: column; /* Stack the label and range vertically */
+    }
+  
+    input[type="range"] {
+      width: 100%; /* Full width on mobile */
+      margin-top: 10px;
+    }
+  }
+  
